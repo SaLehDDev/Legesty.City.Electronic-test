@@ -240,66 +240,216 @@
                 </div>
 
                 <div class="question-group">
-                    <div class="question-title">البريد الإلكتروني <span class="required">*</span></div>
-                    <input type="email" name="email" required placeholder="example@email.com">
+                    <div class="question-title">يوزر الديسكورد <span class="required">*</span></div>
+                    <input type="text" name="discordUsername" required placeholder="مثال: username#1234">
                 </div>
 
+                <!-- الأسئلة -->
                 <div class="question-group">
-                    <div class="question-title">رقم الهاتف <span class="required">*</span></div>
-                    <input type="text" name="phone" required placeholder="05xxxxxxxx">
-                </div>
-
-                <!-- أسئلة نموذجية - ستتم إضافة المزيد لاحقاً -->
-                <div class="question-group">
-                    <div class="question-title">ما هو مستوى خبرتك في هذا المجال؟ <span class="required">*</span></div>
+                    <div class="question-title">1. ما هو الميتا جيمنق؟ <span class="required">*</span></div>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="experience" value="مبتدئ" required>
-                            <span>مبتدئ</span>
+                            <input type="radio" name="q1" value="اي معلومة تحصل عليها من خارج المدينة مثال معلومة حصلت عليها من بث او دسكورد او مقطع باليوتيوب" required>
+                            <span>اي معلومة تحصل عليها من خارج المدينة مثال معلومة حصلت عليها من بث او دسكورد او مقطع باليوتيوب</span>
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="experience" value="متوسط" required>
-                            <span>متوسط</span>
+                            <input type="radio" name="q1" value="ميتا جيمنق قدامي سياره واكمل وارفع عليه السلاح واخليه ينزل واركبها" required>
+                            <span>ميتا جيمنق قدامي سياره واكمل وارفع عليه السلاح واخليه ينزل واركبها</span>
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="experience" value="متقدم" required>
-                            <span>متقدم</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="experience" value="خبير" required>
-                            <span>خبير</span>
+                            <input type="radio" name="q1" value="اروح مركز الشرطه بشكل طبيعي واتقمص الرول بلاي واحاول اني اسوي نفسي طبيعي" required>
+                            <span>اروح مركز الشرطه بشكل طبيعي واتقمص الرول بلاي واحاول اني اسوي نفسي طبيعي</span>
                         </label>
                     </div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-title">اختر المهارات التي تتقنها (يمكن اختيار أكثر من واحدة):</div>
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="skills" value="البرمجة">
-                            <span>البرمجة</span>
+                    <div class="question-title">2. هل ممنوع تقتل البوتات؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q2" value="ايه نعم ممنوع" required>
+                            <span>ايه نعم ممنوع</span>
                         </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="skills" value="التصميم">
-                            <span>التصميم</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="skills" value="التسويق">
-                            <span>التسويق</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="skills" value="إدارة المشاريع">
-                            <span>إدارة المشاريع</span>
+                        <label class="radio-option">
+                            <input type="radio" name="q2" value="لاغير صحيح مب ممنوع" required>
+                            <span>لاغير صحيح مب ممنوع</span>
                         </label>
                     </div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-title">اكتب نبذة مختصرة عن نفسك:</div>
-                    <textarea name="about" placeholder="اكتب نبذة مختصرة عن خبراتك وأهدافك..."></textarea>
+                    <div class="question-title">3. هل مسموح تقتل بمنطقة آمنة؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q3" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q3" value="خطأ" required>
+                            <span>خطأ</span>
+                        </label>
+                    </div>
                 </div>
 
-                <button type="submit" class="submit-btn" id="submitBtn">
+                <div class="question-group">
+                    <div class="question-title">4. هل مسموح تخطف مواطن عند المحكمة؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q4" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q4" value="خطأ" required>
+                            <span>خطأ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">5. اذا مت بشكل كامل هل يحق ترجع او تتذكر الي صار؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q5" value="ايه" required>
+                            <span>ايه</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q5" value="لآ" required>
+                            <span>لآ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">6. هل مسموح تكذب بالرول؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q6" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q6" value="لا" required>
+                            <span>لا</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">7. يحق لك تستعمل RDM مهما كان السبب؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q7" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q7" value="لا" required>
+                            <span>لا</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">8. هل يحق لك اخذ سلاح مع عسكري وتقتل فيه اي شي يمشي؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q8" value="لا" required>
+                            <span>لا</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q8" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">9. ما معنى كلمة دسكورد؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q9" value="برنامج الدولة" required>
+                            <span>برنامج الدولة</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q9" value="دسكورد" required>
+                            <span>دسكورد</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q9" value="سوالف" required>
+                            <span>سوالف</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">10. هل مسموح لك تحمل شخص بدون يرفع يده؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q10" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q10" value="لآ" required>
+                            <span>لآ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">11. هل يحق لك تدخل على الناس وتصدم فيهم؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q11" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q11" value="لآ" required>
+                            <span>لآ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">12. هل اذا انخطفت او صار لك شي تروح تعلم اخوياك علطول؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q12" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q12" value="لآ" required>
+                            <span>لآ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">13. هل يحق لك التليفيت مهما كان السبب؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q13" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q13" value="لآ" required>
+                            <span>لآ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-title">14. الخوف على الحياة - NVL: عدم الخوف بشكل واقعي على حياتك عندما تتعرض للتهديد بالأسلحة أو بأذى شديد من وسائل أخرى يعتبر الخوف على الحياة شي اساسي ومهم جدا مثال: اذا كان هناك اداة تعرض حياتك للخطر، تخاف على حياتك وتحاول تستسلم وتسوي كل شي؟ <span class="required">*</span></div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q14" value="صحيح" required>
+                            <span>صحيح</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q14" value="خطأ" required>
+                            <span>خطأ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitButton">
                     إرسال الاختبار
                 </button>
             </form>
@@ -312,85 +462,83 @@
         const WEBHOOK_URL = 'https://discord.com/api/webhooks/1399103275718152223/TMr7U4opdRojnnm-lXzLUvfdk-bLi8loi5yRkV24t2Ha55VzVZ0q5Ps6JZZhOT2k5vKk';
         
         let currentSubmissionId = null;
-        let statusCheckInterval = null;
+        let pollInterval = null;
 
         document.getElementById('examForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const submitBtn = document.getElementById('submitBtn');
-            const statusMessage = document.getElementById('statusMessage');
+            const submitBtn = document.getElementById('submitButton');
             
             // تعطيل الزر وإظهار التحميل
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'جاري الإرسال... <span class="loading"></span>';
             
-            // جمع البيانات
-            const formData = new FormData(this);
-            const data = {};
-            
-            // جمع البيانات العادية
-            for (let [key, value] of formData.entries()) {
-                if (data[key]) {
-                    if (Array.isArray(data[key])) {
-                        data[key].push(value);
-                    } else {
-                        data[key] = [data[key], value];
-                    }
-                } else {
+            try {
+                // جمع البيانات
+                const formData = new FormData(this);
+                const data = {};
+                
+                // جمع جميع البيانات
+                for (let [key, value] of formData.entries()) {
                     data[key] = value;
                 }
-            }
-            
-            // جمع البيانات المتعددة (checkboxes)
-            const skillsCheckboxes = document.querySelectorAll('input[name="skills"]:checked');
-            data.skills = Array.from(skillsCheckboxes).map(cb => cb.value);
-            
-            // إنشاء معرف فريد للطلب
-            currentSubmissionId = 'exam_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            
-            // تحضير رسالة Discord
-            const embed = {
-                title: "🎓 طلب اختبار جديد",
-                color: 0x202C2C,
-                fields: [
+                
+                // إنشاء معرف فريد للطلب
+                currentSubmissionId = 'exam_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+                
+                // تحضير الحقول للرسالة
+                const fields = [
                     { name: "👤 الاسم الكامل", value: data.fullName || "غير محدد", inline: true },
-                    { name: "📧 البريد الإلكتروني", value: data.email || "غير محدد", inline: true },
-                    { name: "📱 رقم الهاتف", value: data.phone || "غير محدد", inline: true },
-                    { name: "📊 مستوى الخبرة", value: data.experience || "غير محدد", inline: false },
-                    { name: "🛠️ المهارات", value: data.skills.length > 0 ? data.skills.join(", ") : "لم يتم اختيار مهارات", inline: false },
-                    { name: "📝 نبذة شخصية", value: data.about || "لم يتم كتابة نبذة", inline: false },
-                    { name: "🆔 معرف الطلب", value: currentSubmissionId, inline: false }
-                ],
-                timestamp: new Date().toISOString(),
-                footer: {
-                    text: "نظام الاختبار الإلكتروني"
+                    { name: "💬 يوزر الديسكورد", value: data.discordUsername || "غير محدد", inline: true },
+                    { name: "━━━━━━━━━━━━━━━━━━━━", value: "📋 **إجابات الاختبار**", inline: false }
+                ];
+
+                // إضافة الأسئلة والإجابات
+                const questions = [
+                    "1️⃣ ما هو الميتا جيمنق؟",
+                    "2️⃣ هل ممنوع تقتل البوتات؟", 
+                    "3️⃣ هل مسموح تقتل بمنطقة آمنة؟",
+                    "4️⃣ هل مسموح تخطف مواطن عند المحكمة؟",
+                    "5️⃣ اذا مت بشكل كامل هل يحق ترجع او تتذكر الي صار؟",
+                    "6️⃣ هل مسموح تكذب بالرول؟",
+                    "7️⃣ يحق لك تستعمل RDM مهما كان السبب؟",
+                    "8️⃣ هل يحق لك اخذ سلاح مع عسكري وتقتل فيه اي شي يمشي؟",
+                    "9️⃣ ما معنى كلمة دسكورد؟",
+                    "🔟 هل مسموح لك تحمل شخص بدون يرفع يده؟",
+                    "1️⃣1️⃣ هل يحق لك تدخل على الناس وتصدم فيهم؟",
+                    "1️⃣2️⃣ هل اذا انخطفت او صار لك شي تروح تعلم اخوياك علطول؟",
+                    "1️⃣3️⃣ هل يحق لك التليفيت مهما كان السبب؟",
+                    "1️⃣4️⃣ الخوف على الحياة - NVL"
+                ];
+
+                for (let i = 1; i <= 14; i++) {
+                    const answer = data[`q${i}`] || "لم يجب";
+                    fields.push({
+                        name: questions[i-1],
+                        value: answer.length > 100 ? answer.substring(0, 97) + "..." : answer,
+                        inline: false
+                    });
                 }
-            };
 
-            const discordPayload = {
-                embeds: [embed],
-                components: [
-                    {
-                        type: 1,
-                        components: [
-                            {
-                                type: 2,
-                                style: 3,
-                                label: "✅ قبول",
-                                custom_id: `approve_${currentSubmissionId}`
-                            },
-                            {
-                                type: 2,
-                                style: 4,
-                                label: "❌ رفض",
-                                custom_id: `reject_${currentSubmissionId}`
-                            }
-                        ]
+                fields.push({ name: "🆔 معرف الطلب", value: currentSubmissionId, inline: false });
+
+                // تحضير رسالة Discord
+                const embed = {
+                    title: "🎮 طلب اختبار الرول بلاي الجديد",
+                    color: 0x202C2C,
+                    fields: fields,
+                    timestamp: new Date().toISOString(),
+                    footer: {
+                        text: "نظام اختبار الرول بلاي • " + new Date().toLocaleString('ar-SA')
                     }
-                ]
-            };
+                };
 
-            try {
+                const discordPayload = {
+                    content: `📢 **طلب اختبار جديد وصل!**\n👤 **المتقدم:** ${data.fullName}\n💬 **الديسكورد:** ${data.discordUsername}\n\n**للموافقة على الطلب، اكتب:** \`/approve ${currentSubmissionId}\`\n**للرفض، اكتب:** \`/reject ${currentSubmissionId}\``,
+                    embeds: [embed]
+                };
+
+                // إرسال إلى Discord
                 const response = await fetch(WEBHOOK_URL, {
                     method: 'POST',
                     headers: {
@@ -399,61 +547,100 @@
                     body: JSON.stringify(discordPayload)
                 });
 
-                if (response.ok) {
-                    statusMessage.className = 'status-message status-pending';
-                    statusMessage.innerHTML = '⏳ تم إرسال طلبك بنجاح! في انتظار المراجعة...';
-                    statusMessage.style.display = 'block';
-                    
-                    // إخفاء النموذج
-                    document.getElementById('examForm').style.display = 'none';
-                    
-                    // بدء فحص الحالة
-                    startStatusCheck();
-                    
+                if (response.ok || response.status === 204) {
+                    // نجح الإرسال - الانتقال إلى صفحة الانتظار
+                    showWaitingPage(data.fullName, data.discordUsername, currentSubmissionId);
                 } else {
-                    throw new Error('فشل في الإرسال');
+                    throw new Error(`خطأ في الإرسال: ${response.status}`);
                 }
+                
             } catch (error) {
-                console.error('خطأ:', error);
-                statusMessage.className = 'status-message status-error';
-                statusMessage.innerHTML = '❌ حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.';
-                statusMessage.style.display = 'block';
+                console.error('خطأ تفصيلي:', error);
                 
                 // إعادة تفعيل الزر
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = 'إرسال الاختبار';
+                
+                // عرض رسالة خطأ
+                alert('حدث خطأ أثناء إرسال الاختبار. يرجى المحاولة مرة أخرى.');
             }
         });
 
-        function startStatusCheck() {
-            // محاكاة فحص الحالة (في التطبيق الحقيقي، ستحتاج إلى API للتحقق من الحالة)
-            // هنا سنقوم بمحاكاة الاستجابة بعد فترة للاختبار
+        function showWaitingPage(name, discord, submissionId) {
+            // إخفاء محتوى الصفحة الحالي
+            document.querySelector('.container').innerHTML = `
+                <div class="header">
+                    <h1>🎮 تم إرسال الاختبار بنجاح!</h1>
+                    <p>طلبك تحت المراجعة الآن</p>
+                </div>
+                
+                <div class="form-container" style="text-align: center; padding: 60px 40px;">
+                    <div style="background: linear-gradient(135deg, #202c2c, #1a2424); color: white; padding: 40px; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                        <div style="font-size: 4em; margin-bottom: 20px;">⏳</div>
+                        <h2 style="margin-bottom: 15px; font-size: 2em;">انتظر القبول أو الرفض</h2>
+                        <p style="font-size: 1.2em; opacity: 0.9; margin-bottom: 25px;">تم إرسال طلبك إلى الإدارة بنجاح</p>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+                            <p><strong>👤 الاسم:</strong> ${name}</p>
+                            <p><strong>💬 الديسكورد:</strong> ${discord}</p>
+                            <p><strong>🆔 رقم الطلب:</strong> ${submissionId}</p>
+                            <p><strong>🕐 وقت الإرسال:</strong> ${new Date().toLocaleString('ar-SA')}</p>
+                        </div>
+                        
+                        <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px; border: 2px dashed rgba(255,255,255,0.3);">
+                            <h3 style="margin-bottom: 15px; color: #7affff;">📋 ما الذي يحدث الآن؟</h3>
+                            <div style="text-align: right; font-size: 1em; line-height: 1.8;">
+                                <p>✅ تم استلام طلبك بنجاح</p>
+                                <p>🔍 الإدارة تراجع إجاباتك حالياً</p>
+                                <p>⏰ ستصلك النتيجة قريباً</p>
+                                <p>💬 تابع الديسكورد للحصول على التحديثات</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; border-right: 5px solid #202c2c;">
+                        <h3 style="color: #202c2c; margin-bottom: 20px;">📞 معلومات مهمة</h3>
+                        <div style="text-align: right; color: #555; line-height: 1.8;">
+                            <p><strong>🕐 وقت المراجعة:</strong> عادة من 15-30 دقيقة</p>
+                            <p><strong>📱 التواصل:</strong> تابع الديسكورد للحصول على النتيجة</p>
+                            <p><strong>🔄 في حالة الرفض:</strong> يمكنك إعادة التقديم بعد 24 ساعة</p>
+                            <p><strong>✅ في حالة القبول:</strong> ستحصل على دور الوصول للخادم</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <button onclick="location.reload()" style="background: linear-gradient(45deg, #202c2c, #1a2424); color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.1em; cursor: pointer; transition: all 0.3s ease;">
+                            🔄 تقديم طلب جديد
+                        </button>
+                    </div>
+                </div>
+            `;
             
-            // في التطبيق الحقيقي، ستحتاج إلى:
-            // 1. حفظ معرف الطلب في قاعدة بيانات
-            // 2. إنشاء API endpoint للتحقق من الحالة
-            // 3. استخدام webhook أو polling للحصول على التحديثات
-            
-            console.log('بدء فحص حالة الطلب:', currentSubmissionId);
-            
-            // محاكاة فقط - يجب استبدالها بـ API حقيقي
-            setTimeout(() => {
-                // محاكاة موافقة (يمكنك تغيير هذا للاختبار)
-                simulateApproval();
-            }, 30000); // بعد 30 ثانية للاختبار
+            // إضافة تأثير تحريك العداد
+            let dots = 0;
+            setInterval(() => {
+                const loadingText = document.querySelector('h2');
+                if (loadingText) {
+                    dots = (dots + 1) % 4;
+                    loadingText.innerHTML = 'انتظر القبول أو الرفض' + '.'.repeat(dots);
+                }
+            }, 1000);
         }
 
-        function simulateApproval() {
-            const statusMessage = document.getElementById('statusMessage');
-            statusMessage.className = 'status-message status-approved';
-            statusMessage.innerHTML = '✅ تهانينا! تم قبول طلبك بنجاح!';
+        // محاكاة نظام الاستجابة للموافقة/الرفض
+        function simulateApprovalSystem() {
+            // في النظام الحقيقي، ستحتاج لـ Discord Bot للتعامل مع button interactions
+            // هنا نضع محاكاة بسيطة للاختبار
+            
+            // يمكن إضافة polling أو WebSocket للاستماع للتحديثات من الخادم
+            console.log('نظام المحاكاة جاهز للاستقبال');
         }
 
-        function simulateRejection() {
-            const statusMessage = document.getElementById('statusMessage');
-            statusMessage.className = 'status-message status-rejected';
-            statusMessage.innerHTML = '❌ عذراً، تم رفض طلبك. يرجى المحاولة مرة أخرى لاحقاً.';
-        }
+        // تفعيل النظام عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            simulateApprovalSystem();
+            console.log('نظام الاختبار جاهز!');
+        });
 
         // إضافة تأثيرات تفاعلية
         document.querySelectorAll('.question-group').forEach(group => {
